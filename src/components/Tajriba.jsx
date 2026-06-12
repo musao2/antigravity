@@ -71,10 +71,6 @@ function Tajriba() {
                     </div>
 
                 </div>
-
-
-
-                <h1>stainless</h1>
             </section>
         </>
     )
