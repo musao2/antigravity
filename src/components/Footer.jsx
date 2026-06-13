@@ -1,10 +1,10 @@
 export default function Footer() {
     return (
         <footer className="bg-slate-950 text-white">
-            <div className=" px-10 py-16">
+            <div className="px-4 md:px-10 py-12 md:py-16">
 
                 <div className="">
-                    <h1 className="text-4xl md:text-6xl font-bold  text-center">
+                    <h1 className="text-3xl md:text-6xl font-bold text-center">
                         <span className="text-white">FREE</span>{" "}
                         <span className="text-red-500">POWER TECH</span>
                     </h1>

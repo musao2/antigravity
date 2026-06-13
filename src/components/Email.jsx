@@ -4,15 +4,15 @@
 function Email() {
     return (
         <>
-            <section className="Email mt-20 px-10">
-                <div className="flex justify-between">
-                    <div className="pt-10 flex flex-col gap-2">
+            <section className="Email mt-10 md:mt-20 px-4 md:px-10">
+                <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-0">
+                    <div className="pt-10 flex flex-col gap-4">
                         <p>Request a Quote</p>
-                        <h2 className="text-6xl w-150 font-semibold">Ready to Start Your Project?</h2>
-                        <p className="w-120 text-gray-200">For more information about our manufacturing services, or to request a quote from the Pankajux India shop near you. Contact us now.</p>
+                        <h2 className="text-4xl md:text-6xl w-full lg:w-[600px] font-semibold">Ready to Start Your Project?</h2>
+                        <p className="w-full lg:w-[480px] text-gray-200">For more information about our manufacturing services, or to request a quote from the Pankajux India shop near you. Contact us now.</p>
                     </div>
-                    <div>
-                        <div className="min-h-screenflex items-center justify-center p-4 pt-50">
+                    <div className="w-full lg:w-1/2">
+                        <div className="relative flex items-center justify-center p-4 pt-10 lg:pt-32 pb-10">
                             <div className="absolute inset-0 overflow-hidden">
                                 <div className="absolute -top-40 -left-40 w-80 h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
                                 <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-amber-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>

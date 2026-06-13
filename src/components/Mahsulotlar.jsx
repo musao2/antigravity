@@ -47,24 +47,24 @@ function Mahsulotlar() {
     ];
     return (
         <>
-            <section className='px-10 mt-10'>
-                <h2 className='text-center  my-10 text-4xl font-semibold'>
+            <section className='px-4 md:px-10 mt-10'>
+                <h2 className='text-center my-6 md:my-10 text-3xl md:text-4xl font-semibold'>
                     Manufacturing Services
                 </h2>
 
 
-                <div className='flex flex-wrap col-end-2 justify-between'>
+                <div className='flex flex-col lg:flex-row flex-wrap justify-between gap-6'>
 
                     {
                         services.map((item) => (
-                            <div key={item.id} className='group flex w-200 items-center bg-white border border-gray-500/12 rounded-2xl gap-10 my-5 hover:shadow-xl  duration-300 hover:border-[#FF675B] '>
-                                <div className='px-10 flex flex-col gap-3'>
-                                    <h2 className='text-6xl font-bold text-gray-400 duration-300 group-hover:text-[#FF675B]'>{item.id}</h2>
-                                    <h3 className='text-3xl font-semibold'>{item.title}</h3>
-                                    <p className='text-gray-600'>{item.description}</p>
-                                    <button className='border border-[#FF675B] w-30 text-[#FF675B] py-2 rounded-xl hover:bg-[#FF675B] hover:text-white  duration-300'>Learn More</button>
+                            <div key={item.id} className='group flex flex-col md:flex-row w-full lg:w-[48%] items-center bg-white border border-gray-500/12 rounded-2xl my-2 hover:shadow-xl duration-300 hover:border-[#FF675B] overflow-hidden'>
+                                <div className='px-6 md:px-10 py-6 md:py-0 flex flex-col gap-3 w-full md:w-1/2'>
+                                    <h2 className='text-4xl md:text-6xl font-bold text-gray-400 duration-300 group-hover:text-[#FF675B]'>{item.id}</h2>
+                                    <h3 className='text-2xl md:text-3xl font-semibold'>{item.title}</h3>
+                                    <p className='text-gray-600 text-sm md:text-base'>{item.description}</p>
+                                    <button className='border border-[#FF675B] w-32 text-[#FF675B] py-2 rounded-xl hover:bg-[#FF675B] hover:text-white duration-300 mt-2'>Learn More</button>
                                 </div>
-                                <img src={item.image} alt="" />
+                                <img src={item.image} alt="" className='w-full md:w-1/2 h-auto object-cover' />
                             </div>
                         ))
                     }

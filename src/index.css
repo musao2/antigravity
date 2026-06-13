@@ -5,10 +5,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  background-attachment: fixed;
+  min-height: 100dvh;
   width: 100%;
   color: #ffffff;
-
 
   background-color: rgba(77, 75, 75, 0.5);
   background-blend-mode: overlay;
@@ -19,14 +19,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  background-attachment: fixed;
+  min-height: 100dvh;
   width: 100%;
   color: #ffffff;
 
-
   background-color: rgba(77, 75, 75, 0.5);
   background-blend-mode: overlay;
-
 }
 
 .Email {
@@ -34,11 +33,18 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  background-attachment: fixed;
+  min-height: 100dvh;
   width: 100%;
   color: #ffffff;
 
-
   background-color: rgba(77, 75, 75, 0.5);
   background-blend-mode: overlay;
+}
+
+@media (max-width: 768px) {
+  .BgImg, .Kafolat, .Email {
+    background-attachment: scroll; /* Mobile browsers often have issues with fixed background */
+    min-height: 100svh;
+  }
 }

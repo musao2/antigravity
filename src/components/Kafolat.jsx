@@ -42,15 +42,15 @@ function Kafolat() {
 
     return (
         <>
-            <section className="Kafolat px-10 flex flex-col gap-5 flex flex-col justify-between">
-                <div className="pt-15">
+            <section className="Kafolat px-4 md:px-10 flex flex-col gap-5 justify-between py-10 md:py-0">
+                <div className="pt-10 md:pt-15">
                     <p>Aniqlik, Tajriba va Ishonch asosida qurilgan</p>
-                    <h2 className="text-6xl w-150 font-semibold">Aniqlik, Tajriba va Ishonch asosida qurilgan</h2>
+                    <h2 className="text-4xl md:text-6xl w-full md:w-[600px] font-semibold mt-2">Aniqlik, Tajriba va Ishonch asosida qurilgan</h2>
                 </div>
-                <div className="flex justify-between mb-15">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-15 place-items-center mt-10 md:mt-0">
                     {
                         services.map((item) => (
-                            <div key={item.id} className="backdrop-blur-md bg-white/10 border border-white/40  w-[240px] h-[280px] rounded-[20px] p-5 flex flex-col justify-between">
+                            <div key={item.id} className="backdrop-blur-md bg-white/10 border border-white/40 w-full max-w-[280px] h-[280px] rounded-[20px] p-5 flex flex-col justify-between">
                                 <span className="text-8xl">
                                     {item.icon}
                                 </span>
